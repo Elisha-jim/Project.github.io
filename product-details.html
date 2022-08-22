@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Products-details Gifted Mind Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bd728675d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+    <nav>
+      <a href="#"><img src="css/change2.png" alt="Gifted mind"> </a>
+      <form class="search-bar">
+        <!-- you will put search button here -->
+      </form>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="/web.html">HOME</a></li>
+          <li><a href="/product.html">PRODUCT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li> <a href="#">ABOUT</a></li>
+          <li><a href="login.html">ACCOUNT</a><i class="fa-solid fa-bag-shopping"></i> </li>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+      <!-- javascript for menu and close @media-->
+  <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu() {
+           navLinks.style.right = "0";
+         }
+         function hideMenu() {
+           navLinks.style.right = "-200px";
+         }
+  </script>
+<!-- single product details -->
+   <div class="ok">
+     <div class="details">
+       <div class="details1">
+         <img src="css/white.jpg" id="productImg">
+          <!-- click event for small img -->
+         <div class="img-row">
+               <div class="img-col">
+                 <img src="css/white.jpg" width="100%" class="small-img">
+               </div>
+               <div class="img-col">
+                 <img src="css/t.jpg" width="100%" class="small-img">
+               </div>
+               <div class="img-col">
+                 <img src="css/t-1.jpg" width="100%" class="small-img">
+               </div>
+               <div class="img-col">
+                 <img src="css/t-2.jpg" width="100%" class="small-img">
+               </div>
+         </div>
+       </div>
+       <div class="details1" id="details1">
+         <p>Home / T-shirt</p>
+         <h1>White painted shirt</h1>
+         <h4>$70.00</h4>
+         <select>
+           <option>Select Size</option>
+           <option>XXL</option>
+           <option>XL</option>
+           <option>Large</option>
+           <option>Medium</option>
+           <option>small</option>
+         </select>
+         <input type="number" name="" value="1">
+         <a href="cart.html" class="Cart"><span>Add To Cart<i class="fa-solid fa-cart-arrow-down"></i></span> </a>
+         <h3>Product Details <i class="fa-solid fa-indent"></i></h3>
+         <br>
+         <p>Give your summer wardrobe a style upgrade with the 100% cotton Men Active T-shirt. Team it a pair of shorts for your morning workout or a denims for evening out with the guys.</p>
+       </div>
+     </div>
+   </div>
+   <!-- title -->
+   <div class="title">
+     <div class="">
+       <h2>Related Products</h2>
+     </div>
+   </div>
+<!-- script for single product details -->
+     <script>
+       var productImg = document.getElementById("productImg");
+       var smallimg =document.getElementsByClassName("small-img");
+       smallimg[0].onclick = function(){
+         productImg.src = smallimg[0].src;
+       }
+       smallimg[1].onclick = function(){
+         productImg.src = smallimg[1].src;
+       }
+       smallimg[2].onclick = function(){
+         productImg.src = smallimg[2].src;
+       }
+       smallimg[3].onclick = function(){
+         productImg.src = smallimg[3].src;
+       }
+     </script>
+
+
+<!-- product -->
+    <section class="test">
+      <div class="ok">
+        <div class="ok-row">
+          <img src="css/hoddies.jpg" alt="">
+          <h3>Cream color hoddie</h3>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="ok-row">
+          <img src="css/girl.jpg" alt="">
+          <h3>Out doors dress</h3>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="ok-row">
+          <img src="css/heel.jpg" alt="">
+          <h3> Stilettto heels</h3>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="ok-row">
+          <img src="css/t-shirt.jpg" alt="">
+          <h3>strips summer shirt</h3>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+      </section>
+
+
+
+<!-- footer -->
+    <div class="main-footer">
+        <div class="main">
+          <div class="footer">
+            <div class="footer-col">
+              <h3>Download Our App</h3>
+              <p>Download App for Andriod <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank"><i class="fa-brands fa-android"></i></a> and ios <a href="#"><i class="fa-brands fa-apple"></i></a> mobile phone </p>
+            </div>
+            <div class="footer-col">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="#">Coupons</a> </li>
+                <li><a href="#">Blog Post</a> </li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Join Affiliate</a> </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Follow Us</h3>
+              <!-- note you will put a target on link -->
+              <ul>
+                <li><a href="#">FaceBook</a> <i class="fa-brands fa-facebook"></i> </li>
+                <li><a href="#">Instagram</a> <i class="fa-brands fa-instagram"></i> </li>
+                <li><a href="#">Twitter</a> <i class="fa-brands fa-square-twitter"></i></li>
+                <li><a href="#">YouTube</a> <i class="fa-brands fa-youtube"></i></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <p class="copy">Copywrite &copy; 2022 by Jim</p>
+    </div>
+</body>
+</html>

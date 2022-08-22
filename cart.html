@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cart items</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bd728675d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+    <nav>
+      <a href="#"><img src="css/change2.png" alt="Gifted mind"> </a>
+      <form class="search-bar">
+        <!-- you will put search button here -->
+      </form>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="/web.html">HOME</a></li>
+          <li><a href="/product.html">PRODUCT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li> <a href="#">ABOUT</a></li>
+          <li><a href="login.html">ACCOUNT</a><i class="fa-solid fa-bag-shopping"></i> </li>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+      <!-- javascript for menu and close @media-->
+  <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu() {
+           navLinks.style.right = "0";
+         }
+         function hideMenu() {
+           navLinks.style.right = "-200px";
+         }
+  </script>
+<!-- cart  items -->
+    <div class="cart-items">
+      <div class="cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Sub-total</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="css/white.jpg">
+              <div class="cart-tag">
+                <p>White Printed T-shirt</p>
+                <small>Price: $70.00</small>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name="" value="1"> </td>
+          <td>$70.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="css/9.jpg">
+              <div class="cart-tag">
+                <p>Kitten heals</p>
+                <small>Price: $50.00</small>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name="" value="1"> </td>
+          <td>$50.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="css/heel.jpg">
+              <div class="cart-tag">
+                <p>Stilettto heels</p>
+                <small>Price: $50.00</small>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name="" value="1"> </td>
+          <td>$50.00</td>
+        </tr>
+       </table>
+       <div class="total-price">
+         <table>
+           <tr>
+             <td><b>SubTotal</b></td>
+             <td>$170.00</td>
+           </tr>
+           <tr>
+             <td><b>Tax</b></td>
+             <td>$20.00</td>
+           </tr>
+           <tr>
+             <td><b>Shipping</b></td>
+             <td>$6.00</td>
+           </tr>
+           <tr>
+             <td><b>Total: </b></td>
+             <td>$196.00</td>
+           </tr>
+         </table>
+
+       </div>
+      </div>
+     </div>
+
+
+<!-- footer -->
+    <div class="main-footer">
+        <div class="main">
+          <div class="footer">
+            <div class="footer-col">
+              <h3>Download Our App</h3>
+              <p>Download App for Andriod <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank"><i class="fa-brands fa-android"></i></a> and ios <a href="#"><i class="fa-brands fa-apple"></i></a> mobile phone </p>
+            </div>
+            <div class="footer-col">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="#">Coupons</a> </li>
+                <li><a href="#">Blog Post</a> </li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Join Affiliate</a> </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Follow Us</h3>
+              <!-- note you will put a target on link -->
+              <ul>
+                <li><a href="#">FaceBook</a> <i class="fa-brands fa-facebook"></i> </li>
+                <li><a href="#">Instagram</a> <i class="fa-brands fa-instagram"></i> </li>
+                <li><a href="#">Twitter</a> <i class="fa-brands fa-square-twitter"></i></li>
+                <li><a href="#">YouTube</a> <i class="fa-brands fa-youtube"></i></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <p class="copy">Copywrite &copy; 2022 by Jim</p>
+    </div>
+</body>
+</html>
